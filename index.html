@@ -3,20 +3,32 @@
   <head>
 
 <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+<script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@2.1.1/dist/aframe-extras.min.js"></script>
-    
   </head>
-    <body>
+    <body> 
     <a-scene>
       <a-sky color="lightblue"></a-sky>
-      
-       <!-- Put this inside the <a-scene> -->
-      <a-entity 
-      ply-model="src:dog.ply"
-      position="0 1 -2"
-      rotation="-90 0 90"
-      ></a-entity>
-                 
+      <a-entity ply-model="src: Football frenzy.ply" position="-11.23482 -5.18211 15.58872" rotation="-90 0 0" scale="2.5 2.5 2.5"></a-entity>
+      <a-entity ply-model="src: teckyballernum2.ply" scale="0.3 0.3 0.3" position="3.883 -0.276 -10.129" rotation="-89.884 0.640 89.715"
+      animation="
+      property: position;
+      from: 3.883 -0.276 -10.129;
+      to: 3.883 0.358 -10.129;
+      dur: 2000;
+      loop:true;
+      dir:alternate;"></a-entity>
+      <a-entity ply-model="src: tecky baller.ply" scale="0.5 0.5 0.5" rotation="-89.08519686032578 4.122431335966273 154.66136242863877" position="2.491 -0.704 0.788"></a-entity>
+      <a-entity ply-model="src: Final ball.ply" scale="0.2 0.2 0.2"  position="1.032 0.270 -0.394"
+      animation="
+          property: position;
+          from: 1.032 0.270 -0.394;
+          to: 2.462 0.964 -11.465;
+          dur: 2000;
+          loop:true;
+          dir:alternate;"
+          ></a-entity>
+      <a-sky color="lightblue" material="" geometry="" rotation="-90 -0.077 -0.030939720937064454"></a-sky>
     </a-scene>
   </body>
 </html>
